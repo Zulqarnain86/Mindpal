@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="mood-page">
+    <div class="page-header">
+        <h2>😊 Mood Tracker</h2>
+        <p>How are you feeling today?</p>
+    </div>
+
+    <div class="mood-selector">
+        <div class="mood-btn" data-score="5">😁<br>Great</div>
+        <div class="mood-btn" data-score="4">🙂<br>Good</div>
+        <div class="mood-btn" data-score="3">😐<br>Okay</div>
+        <div class="mood-btn" data-score="2">😔<br>Sad</div>
+        <div class="mood-btn" data-score="1">😭<br>Very Sad</div>
+    </div>
+
+    <button id="saveMood">Save Today's Mood</button>
+
+    <div class="recommendation">
+        <h3>💡 Wellness Recommendation</h3>
+        <p id="recommendText">Select your mood to receive personalised advice.</p>
+    </div>
+
+    <div class="chart-card">
+        <h3>📊 Weekly Mood</h3>
+        <canvas id="moodChart"></canvas>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            <small>Home</small>
+        </a>
+        <a href="chat.html">
+            <i class="fa-solid fa-comments"></i>
+            <small>Chat</small>
+        </a>
+        <a href="appointment.html">
+            <i class="fa-solid fa-calendar"></i>
+            <small>Booking</small>
+        </a>
+        <a href="profile.html">
+            <i class="fa-solid fa-user"></i>
+            <small>Profile</small>
+        </a>
+    </div>
+</div>
+
+<script src="mood.js"></script>
+</body>
+</html>

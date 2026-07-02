@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="appointment-page">
+    <div class="page-header">
+        <h2>📅 Book Appointment</h2>
+        <p>Select your preferred counsellor and time.</p>
+    </div>
+
+    <div class="card">
+        <label>Counsellor</label>
+        <select id="counsellor">
+            <option>Dr. Sarah Lim</option>
+            <option>Mr. Daniel Tan</option>
+            <option>Ms. Aisyah Rahman</option>
+            <option>Dr. Michael Lee</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" id="date">
+
+        <label>Time</label>
+        <select id="time">
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+        </select>
+
+        <label>Consultation Type</label>
+        <select id="consultationType">
+            <option>💬 Chat Counselling</option>
+            <option>📹 Video Counselling</option>
+            <option>📞 Voice Call</option>
+        </select>
+
+        <label>Reason for Consultation</label>
+        <textarea id="reason" rows="5" placeholder="Describe how you're feeling..."></textarea>
+
+        <button id="bookBtn">Confirm Appointment</button>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            <small>Home</small>
+        </a>
+        <a href="chat.html">
+            <i class="fa-solid fa-comments"></i>
+            <small>Chat</small>
+        </a>
+        <a href="appointment.html" class="active">
+            <i class="fa-solid fa-calendar"></i>
+            <small>Booking</small>
+        </a>
+        <a href="profile.html">
+            <i class="fa-solid fa-user"></i>
+            <small>Profile</small>
+        </a>
+    </div>
+</div>
+
+<script src="appointment.js"></script>
+</body>
+</html>

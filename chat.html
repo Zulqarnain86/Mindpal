@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Counselling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <a href="javascript:history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <img src="https://i.pravatar.cc/150?img=48">
+        <div>
+            <h3>Dr. Sarah Lim</h3>
+            <small>🟢 Online</small>
+        </div>
+        <i class="fa-solid fa-video"></i>
+    </div>
+
+    <div class="chat-body">
+        <div class="receive">
+            Hello 👋<br>How are you feeling today?
+        </div>
+        <div class="send">
+            I have been feeling stressed at work lately.
+        </div>
+        <div class="receive">
+            I'm sorry you're experiencing that.<br>Can you tell me what has been causing your stress?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="message" placeholder="Type your message...">
+        <button id="sendBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
