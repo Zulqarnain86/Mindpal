@@ -1,6 +1,6 @@
 const language = localStorage.getItem("language");
 document.getElementById("languageText").innerHTML = language || "English";
-document.querySelector("h2").innerText = t("Hello ");
+document.getElementById("pageTitle").innerText = t("📅 Next Appointment");
 const quotes = [
     "Every day is a new beginning.",
     "You are stronger than you think.",
